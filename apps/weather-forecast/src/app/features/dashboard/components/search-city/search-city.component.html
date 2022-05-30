@@ -1,0 +1,18 @@
+<div class="search-city__container">
+    <div class="search-city__block">
+        <form class="example-form" [formGroup]="searchForm" (ngSubmit)="searchCity(searchForm)">
+            <mat-form-field class="example-full-width search-field" appearance="fill">
+                <mat-label>City</mat-label>
+                <input matInput placeholder="Search City" formControlName="city" name="city" />
+            </mat-form-field>
+            <button class="search-but" mat-flat-button color="primary" type="submit">Search</button>
+        </form>
+        <mat-button-toggle-group name="mode" aria-label="Font Style" class="filter-buttons"
+            #group="matButtonToggleGroup" value="hourlyMode">
+            <mat-button-toggle value="hourlyMode" (click)="filterByHour()">Hourly</mat-button-toggle>
+            <mat-button-toggle value="dailyMode" (click)="filterByDay()">Daily</mat-button-toggle>
+        </mat-button-toggle-group>
+    </div>
+    <span class="text-danger" *ngIf="searchForm.get('city').hasError('pattern')">Only Letters</span>
+
+</div>

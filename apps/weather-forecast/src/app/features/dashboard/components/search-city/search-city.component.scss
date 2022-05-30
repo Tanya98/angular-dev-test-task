@@ -1,0 +1,43 @@
+.search-city {
+  &__container {
+    height: 100px;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-left: 60px;
+  }
+  &__block {
+    display: flex;
+  }
+}
+.example-form {
+  display: flex;
+}
+
+.search-field {
+  width: 350px;
+}
+.search-but {
+  height: 52px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.filter-buttons {
+  display: flex;
+  margin-left: 40px;
+  height: 52px;
+  .daily-but {
+    margin-left: 30px;
+  }
+}
+
+.text-danger {
+  color: red;
+}
+
+.error-block {
+  height: 50px;
+}

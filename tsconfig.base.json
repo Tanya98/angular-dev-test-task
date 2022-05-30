@@ -1,0 +1,30 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@wf/environments/*": ["apps/weather-forecast/src/environments/*"],
+      "@wf/app/*": ["apps/weather-forecast/src/app/*"],
+      "@wf/features/*": ["apps/weather-forecast/src/app/features/*"],
+      "@wf/features/dashboard/*": ["apps/weather-forecast/src/app/features/dashboard/*"],
+      "@wf/shared/*": ["apps/weather-forecast/src/app/shared/*"],
+      "@wf/core/*": ["apps/weather-forecast/src/app/core/*"],
+      "@wf/state/*": ["apps/weather-forecast/src/app/state/*"],
+      "@weather-forecast/ui": ["libs/ui/src/index.ts"],
+      "@weather-forecast/weather-forecast/service": ["libs/weather-forecast/service/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

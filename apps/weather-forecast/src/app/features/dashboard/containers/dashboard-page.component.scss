@@ -1,0 +1,27 @@
+.weather {
+  &__container {
+    display: flex;
+    padding-left: 60px;
+    margin-top: 30px;
+  }
+  &__info-block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  &__details {
+    font-size: 20px;
+    margin: 0px 10px;
+  }
+
+  &__table-section {
+    display: flex;
+    margin-top: 40px;
+  }
+}
+
+.search-city-error {
+  font-size: 15px;
+  padding-left: 60px;
+  padding-top: 20px;
+}

@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-	selector: 'bp-root',
-	templateUrl: './app.component.html',
-	styleUrls: ['./app.component.scss'],
+  selector: 'weather-forecast-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-	title = 'weather-forecast';
+  title = 'weather-forecast';
 }
